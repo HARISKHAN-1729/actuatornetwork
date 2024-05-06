@@ -24,7 +24,7 @@ To set up your environment for running this project, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/actuator-performance-prediction.git
+   git clone https://github.com/HARISKHAN-1729/actuatornetwork.git
    cd actuatornetwork
 
 2. Create and activate a virtual environment (optional but recommended):
