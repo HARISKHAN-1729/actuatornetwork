@@ -13,12 +13,10 @@ file_path = '/content/combined_data.csv'
 X_tensor, y_tensor = load_and_prepare_data(filepath)
 train_loader, val_loader = split_data(X_tensor, y_tensor, train_ratio=0.9)
 
-model1 = ActuatorNet1().to(device)
-model2 = ActuatorNet2().to(device)  # Choose model as per requirement
-criterion = nn.SmoothL1Loss(beta=0.3)
-optimizer = optim.Adam(model1.parameters(), lr=0.0007)
-scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=10, gamma=0.1)
+model1, model2, optimizer1, optimizer2, scheduler1, scheduler2 = setup_models_and_optimizers()
 
+
+#Change the model, optimizer for the respective model training.
 num_epochs = 50
 metrics = {
     'train_loss': [], 'val_loss': [], 'train_mae': [], 'val_mae': [],
