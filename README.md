@@ -40,4 +40,4 @@ To set up your environment for running this project, follow these steps:
 4. Usage:
    ```bash
     python run.py
-    python inference and evaluate.py
+    python inference_and_evaluate.py
