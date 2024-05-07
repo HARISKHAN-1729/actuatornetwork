@@ -17,6 +17,7 @@ This project is organized into several folders and files:
 - `Validation.py`: Contains functions for validating the models.
 - `metrics.py`; Contains functions for computing evaluation metrics.
 - `run.py`: The main script that ties everything together; it's used to execute the model's training and evaluation pipeline.
+- `inference and evaluate.py`: Contains function that can assess model on unseen data. 
 
 ## Installation
 
@@ -39,3 +40,4 @@ To set up your environment for running this project, follow these steps:
 4. Usage:
    ```bash
     python run.py
+    python inference and evaluate.py
